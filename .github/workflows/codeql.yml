@@ -7,10 +7,7 @@ on:
   pull_request:
     branches:
       - main
-  schedule:
-    # Weekly on Monday at 06:00 UTC — catches advisories that landed
-    # without a corresponding code change in this repo.
-    - cron: '0 6 * * 1'
+  workflow_dispatch:
 
 permissions:
   contents: read
